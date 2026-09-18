@@ -1,0 +1,147 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    background-color: lightblue;
+    padding: 20px;
+    border: 2px solid black;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    color: darkblue;
+    margin-bottom: 10px;
+}
+
+header h2 {
+    color: darkblue;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Navigation Styles */
+nav {
+    background-color: #333;
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #555;
+    text-decoration: underline;
+}
+
+/* Main Content */
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+h1, h2 {
+    color: darkblue;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+p {
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+/* Text Formatting */
+strong {
+    color: darkblue;
+    font-weight: bold;
+}
+
+em {
+    font-style: italic;
+    color: #555;
+}
+
+mark {
+    background-color: lightyellow;
+    padding: 2px 5px;
+    border-radius: 3px;
+}
+
+abbr {
+    cursor: help;
+    border-bottom: 1px dotted #999;
+}
+
+/* Block Elements */
+div {
+    margin: 10px 0;
+}
+
+blockquote {
+    border-left: 4px solid darkblue;
+    padding-left: 15px;
+    margin: 20px 0;
+    font-style: italic;
+    color: #555;
+}
+
+/* Footer Styles */
+footer {
+    background-color: lightblue;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    margin-top: 30px;
+    border-top: 2px solid #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav li {
+        margin: 5px 0;
+    }
+
+    main {
+        margin: 10px;
+        padding: 15px;
+    }
+}
